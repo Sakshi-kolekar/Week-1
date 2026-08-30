@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartWatch - Product Landing Page</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-slate-800 text-white">
+
+        <nav class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+
+            <h1 class="text-2xl font-bold">
+                SmartWatch
+            </h1>
+
+            <div class="flex gap-6">
+                <a href="#home" class="hover:text-sky-300">Home</a>
+                <a href="#features" class="hover:text-sky-300">Features</a>
+                <a href="#contact" class="hover:text-sky-300">Contact</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="bg-sky-100 py-20 px-6">
+
+            <div class="max-w-6xl mx-auto text-center">
+
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+                    Smart Technology for Your Everyday Life
+                </h2>
+
+                <p class="max-w-2xl mx-auto text-lg text-gray-600 mb-8">
+                    Stay connected, track your activities and manage
+                    your day with our modern SmartWatch.
+                </p>
+
+                <a href="#contact"
+                    class="inline-block bg-slate-800 text-white px-7 py-3 rounded-lg font-semibold hover:bg-slate-700">
+                    Get Started
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Features Section -->
+        <section id="features" class="py-16 px-6">
+
+            <div class="max-w-6xl mx-auto">
+
+                <h2 class="text-3xl font-bold text-center mb-10">
+                    SmartWatch Features
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow text-center">
+
+                        <h3 class="text-xl font-bold mb-3">
+                            Fitness Tracking
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Track your daily activities and stay
+                            updated with your fitness goals.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow text-center">
+
+                        <h3 class="text-xl font-bold mb-3">
+                            Smart Notifications
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Receive important calls and notifications
+                            directly on your smartwatch.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow text-center">
+
+                        <h3 class="text-xl font-bold mb-3">
+                            Long Battery Life
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Enjoy reliable performance throughout
+                            your busy day.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact / Sign-up Form -->
+        <section id="contact" class="bg-slate-100 py-16 px-6">
+
+            <div class="max-w-lg mx-auto">
+
+                <h2 class="text-3xl font-bold text-center mb-3">
+                    Ask About SmartWatch
+                </h2>
+
+                <p class="text-center text-gray-600 mb-8">
+                    Have questions about our SmartWatch?
+                    Fill out the form and we’ll get in touch with you.
+                </p>
+
+                <form class="bg-white p-6 rounded-xl shadow">
+
+                    <!-- Name -->
+                    <div class="mb-5">
+
+                        <label for="name" class="block font-semibold mb-2">
+                            Name:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter Your Name"
+                            required
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-400">
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="mb-5">
+
+                        <label for="email" class="block font-semibold mb-2">
+                            Email:
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter Your Email"
+                            required
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-400">
+
+                    </div>
+
+
+                    <!-- Subject -->
+                    <div class="mb-5">
+
+                        <label for="subject" class="block font-semibold mb-2">
+                            Subject:
+                        </label>
+
+                        <select
+                            id="subject"
+                            name="subject"
+                            required
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-sky-400">
+
+                            <option value="">Select Subject</option>
+                            <option value="product">Product Inquiry</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="general">General Inquiry</option>
+
+                        </select>
+
+                    </div>
+          <!-- How did you hear about us? -->
+            <div class="mb-5">
+                <label for="source" class="block font-semibold mb-2">
+                    How did you hear about us?
+                </label>
+
+                <select
+                    id="source"
+                    name="source"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-sky-400">
+
+                    <option value="">Select an option</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="friend">Friend</option>
+                    <option value="other">Other</option>
+
+                </select>
+            </div>
+
+
+                    <!-- Subscribe -->
+                    <div class="mb-5">
+
+                        <label class="flex items-center gap-2">
+
+                            <input
+                                type="checkbox"
+                                id="subscribe"
+                                name="subscribe">
+
+                            <span>
+                                Subscribe to product updates
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Message -->
+                    <div class="mb-5">
+
+                        <label for="message" class="block font-semibold mb-2">
+                            Message:
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Enter your query about SmartWatch"
+                            required
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-400"></textarea>
+
+                    </div>
+
+
+                    <!-- Submit Button -->
+                    <button
+                        type="submit"
+                        class="w-full bg-slate-800 text-white py-3 rounded-lg font-semibold hover:bg-slate-700">
+
+                        Submit
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white text-center py-6">
+
+        <p>
+            © 2026 SmartWatch. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
