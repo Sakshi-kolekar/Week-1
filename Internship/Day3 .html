@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <h1>Contact Us</h1>
+
+    <form>
+
+        <label for="name">Name: *</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+        <br><br>
+
+        <label for="email">Email: *</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+        <br><br>
+
+        <label for="subject">Subject: *</label><br>
+        <select id="subject" name="subject" required>
+            <option value="">-- Select Subject --</option>
+            <option value="general">Internship Inquiry</option>
+            <option value="feedback">Feedback</option>
+            <option value="project">General Inquiry</option>
+        </select>
+        <br><br>
+
+        <p>Preferred Contact Time :</p>
+
+        <input
+            type="radio"
+            id="Morning"
+            name="contact-Time"
+            value="Morning"
+            required
+        >
+        <label for="Morning">Morning</label>
+
+        <input
+            type="radio"
+            id="Evening"
+            name="contact-Time"
+            value="Evening"
+        >
+        <label for="Evening">Evening</label>
+
+        <br><br>
+
+        <input
+            type="checkbox"
+            id="subscribe"
+            name="subscribe"
+        >
+        <label for="subscribe">
+            Subscribe to updates
+        </label>
+
+        <br><br>
+
+        <label for="message">Message: *</label><br>
+        <textarea
+            id="message"
+            name="message"
+            rows="6"
+            cols="40"
+            placeholder="Enter your query "
+            required
+        ></textarea>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
